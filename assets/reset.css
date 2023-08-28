@@ -1,0 +1,11 @@
+html, body, h1, h2, p, blockquote, a, img, ol, ul, header, footer, nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: monospace;
+}
+
+ul {
+    list-style: none;
+}
