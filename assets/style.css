@@ -69,6 +69,7 @@ div {
 img {
     position: absolute;
     width: 25%;
+    max-width: 350px;
     margin-left: 40px;
     border: 5px solid var(--light);
     top: -40px;
@@ -97,6 +98,8 @@ img {
     flex-direction: column;
     align-items: flex-end;
 }
+
+
 
 #About aside p {
     width: 70%;
