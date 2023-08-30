@@ -2,6 +2,7 @@
 --green: #afbd64;
 --light: #f7f6e0;
 --dark: #4c6333;
+--shadow: #c7b888;
 }
 
 body {
@@ -17,22 +18,32 @@ h1 {
 
 h2 {
     font-size: 30px;
-    padding-left: 50px;
     color: var(--green);
     margin: 60px;
 }
 
+h3 {
+    color: var(--dark);
+}
+
+p {
+    font-size: 16px;
+    margin: 20px;
+}
+
 /*Header*/
 header {
+
     display: flex;
     flex-wrap: wrap;
+    text-decoration: underline;
     justify-content: space-between;
     background-color: var(--green);
     color: var(--light);
     padding: 50px;
     align-items: baseline;
-    border: 0 0 0 20px;
     border-color: var(--dark);
+    box-sizing: border-box;
 }
 
 #nav-links {
@@ -40,10 +51,15 @@ header {
     color: var(--light);
 }
 
-#nav-links li a {
+#nav-links a {
     margin: 10px;
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--light);
+    font-size: 20px;
+
+}
+#nav-links a:hover {
+    color: var(--dark);
 }
 
 div {
@@ -62,39 +78,94 @@ img {
 
 #hello {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
     padding: 40px;
+    text-decoration: underline var(--green);
+    flex-wrap: wrap;
+}
+.small {
+    font-size: 20px;
+    margin-top: 100px;
+    color: var(--dark);
 }
 
 /* about */
-#about {
+
+#About aside {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+#About aside p {
+    width: 70%;
+    padding: 20px;
+    border: solid 5px var(--green);
+    box-shadow: 10px 5px 5px var(--shadow);
 }
 
 /* Works */
 
-#Works {
-
+#Works aside {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: var(--green);
 }
+
+.card {
+    width: 500px;
+    border-style: solid var(--dark);
+    border-width: 1px;
+    padding: 10px;
+    margin: 20px;
+    flex: 0 0 300px;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px var(--dark);
+    background-color: var(--light);
+}
+
+.card p {
+    position: relative;
+    margin: 20px;
+}
+
+.card img {
+    position: relative;
+    left: 140px;
+    width: 140px;
+    height: 140px;
+    top: auto;
+}
+
 
 /* Contacts */
 
-#Content li {
-    display:flex;
-    flex-wrap: row wrap;
+#Contact ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+#Contact ul li {
+    margin: 30px;
+
 }
 
 #Contact a {
-    margin: 60px;
     text-decoration: none;
-    color: var(--dark);
-    display:flex;
-
+    color: var(--light);
+    font-size: 20px;
+    background-color: var(--dark);
+    padding: 10px;
+    border-radius: 5px;
 }
 
 /*Footer*/
+
 Footer {
     position: fixed;
     width: 100%;
@@ -102,4 +173,30 @@ Footer {
     background-color: var(--green);
     color: var(--light);
     padding: 10px;
+}
+
+/* Inquiries */
+
+@media screen and (max-width: 800px) {
+    .card {
+        width: 100%;
+    }
+    #About {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #hello {
+        padding-left: 0px;
+    }
+    .card {
+        flex-shrink: 2;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .card img {
+        align-self: center;
+    }
 }
