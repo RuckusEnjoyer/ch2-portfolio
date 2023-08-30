@@ -16,3 +16,4 @@ To visit a website, click on the corresponding image. To navigate to various par
 All artwork in this site was created by me.
 
 ## Link
+https://ruckusenjoyer.github.io/ch2-portfolio/
