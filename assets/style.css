@@ -195,10 +195,14 @@ Footer {
     header {
         width: 100vw;
     }
+    div img {
+        width: 60vw;
+    }
     /* body */
     #hello {
         padding-left: 0px;
         margin-left: 0px;
+        margin-top: 30px;
         justify-content: flex-start;
         font-size: 18px;
     }
@@ -221,6 +225,8 @@ Footer {
         margin: 10px;
     }
     .card img {
-        left: 0px;
+        width: 60vw;
+        height: 25vh;
+        left: 35px;
     }
 }

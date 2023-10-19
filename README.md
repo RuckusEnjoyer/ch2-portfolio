@@ -7,6 +7,8 @@ I faced a few challenges when making this piece. My Devtools' device toolbar kep
 
 In the future, I plan to implement each website I create, both in my freetime as well as other projects I am working on through the bootcamp. I will also update my contact information once this bootcamp is complete.
 
+In my newest update, I have made a minor update so that the images on my cards are offset the same way on all screen sizes. 
+
 ## Usage/Screenshot
 To visit a website, click on the corresponding image. To navigate to various parts of this site, click on the corresponding navbar indicators.
 
